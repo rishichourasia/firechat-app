@@ -1,7 +1,8 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Login } from "./components/Login";
 import { AuthProvider } from "./components/Context";
+import { Chats } from "./components/Chats";
 
 function App() {
 	return (
@@ -9,6 +10,7 @@ function App() {
 			<Router>
 				<AuthProvider>
 					<Switch>
+						<Route path="/chats" component={Chats} />
 						<Route path="/" component={Login} />
 					</Switch>
 				</AuthProvider>
