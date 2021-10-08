@@ -26,3 +26,7 @@ body {
 .card-title {
 	font-weight: bolder;
 }
+
+.bg-color {
+	background-color: #1890ff !important;
+}

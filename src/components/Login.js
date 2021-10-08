@@ -1,7 +1,6 @@
 import React from "react";
 import { GoogleOutlined } from "@ant-design/icons";
 import firebase from "firebase/compat/app";
-
 import { auth } from "../firebase";
 
 export const Login = () => {
@@ -14,14 +13,14 @@ export const Login = () => {
 					<p className="card-text">
 						Sign In Using Google and start using Firechat rightaway !
 					</p>
-					<div
+					<button
 						className="btn btn-primary"
 						onClick={() =>
 							auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())
 						}
 					>
 						<GoogleOutlined /> Login
-					</div>
+					</button>
 				</div>
 				<div class="card-footer text-muted">© Rishi Chourasia 2021</div>
 			</div>

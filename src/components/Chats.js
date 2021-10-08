@@ -62,12 +62,19 @@ export const Chats = () => {
 			});
 	}, [user, history]);
 
-	if (!user || loading) return "Loading...";
+	if (!user || loading)
+		return (
+			<div class="d-flex justify-content-center">
+				<div class="spinner-border text-primary" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+			</div>
+		);
 
 	return (
 		<div className="chat-page">
-			<nav class="navbar navbar-light bg-light justify-content-between">
-				<h1 class="navbar-brand">Navbar</h1>
+			<nav class="navbar navbar-light bg-light justify-content-between bg-color">
+				<h1 class="navbar-brand">Firechat</h1>
 				<button onClick={logOut} class="btn btn-outline-danger my-2 my-sm-0">
 					Log Out
 				</button>
