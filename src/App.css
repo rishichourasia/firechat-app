@@ -4,6 +4,25 @@
 	text-align: center;
 }
 
+body {
+	background-color: aliceblue;
+}
+
 * {
 	font-family: "Open Sans", sans-serif;
+}
+
+.over {
+	margin-left: 20% !important;
+	margin-right: 10% !important;
+	margin-top: 10%;
+	width: 60%;
+	border: 1px solid gray;
+}
+.card-header {
+	background-color: rgb(184, 216, 247);
+	color: rgb(78, 77, 77) !important;
+}
+.card-title {
+	font-weight: bolder;
 }
