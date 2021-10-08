@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap");
 
 .App {
 	text-align: center;
@@ -20,13 +20,47 @@ body {
 	border: 1px solid gray;
 }
 .card-header {
-	background-color: rgb(184, 216, 247);
-	color: rgb(78, 77, 77) !important;
+	background-color: #0888ff;
+	color: rgb(238, 237, 237) !important;
 }
 .card-title {
 	font-weight: bolder;
 }
 
 .bg-color {
-	background-color: #1890ff !important;
+	background-color: #2495ff !important;
+}
+
+.bold {
+	color: white !important;
+	font-size: 2rem;
+	font-weight: 700 !important;
+}
+
+/* loader */
+
+.lds-dual-ring {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin-top: 20%;
+}
+.lds-dual-ring:after {
+	content: " ";
+	display: block;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border-radius: 50%;
+	border: 6px solid #2495ff;
+	border-color: #2495ff transparent #2495ff transparent;
+	animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
